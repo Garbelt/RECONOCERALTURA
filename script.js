@@ -134,18 +134,18 @@ const instruments = [
 ];
 
 let currentInstrument;
-let totalTimeInSeconds = 60;
+let totalTimeInSeconds = 180;
 let errors = 0;
 let timerInterval;
 let buttonsEnabled = true;
 
 function startGame() {
     endGameExecuted = false;
-    totalTimeInSeconds = 60;
+    totalTimeInSeconds = 180;
     errors = 0;
     correctAnswers = 0;  // Reiniciar el contador de respuestas correctas
     score = 0;
-    document.getElementById("reloj").textContent = `Tiempo: 01:00`;
+    document.getElementById("reloj").textContent = `Tiempo: 03:00`;
     updateErrorsDisplay();
     shuffleInstruments();
 
