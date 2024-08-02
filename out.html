@@ -118,7 +118,7 @@
     <div class="container">
         <center>
             <h1 class="title-line1">HISTORIAL DE JUEGOS</h1>
-            <h2 class="title-line2">RECONOCER TENDENCIA MELÓDICA</h2>
+            <h2 class="title-line2">RECONOCER ALTURA DE DOS SONIDOS</h2>
         </center>
         <table id="games-table">
             <thead>
@@ -166,7 +166,7 @@
                     // Ordenar los juegos filtrados por puntaje en orden descendente
                     filteredGames.sort((a, b) => b.puntaje - a.puntaje);
 
-                    // Obtener el juego destacado (el de número más alto en "juegonumero")
+                    // Obtener el juego destacado (el de nÃºmero mÃ¡s alto en "juegonumero")
                     const maxGame = filteredGames.reduce((max, game) => game.juegonumero > max.juegonumero ? game : max);
 
                     // Mostrar solo los primeros 5 juegos en la tabla principal
@@ -205,7 +205,7 @@
                 historyElement.innerHTML = "<tr><td colspan='4'>No hay historial disponible para este juego.</td></tr>";
             }
 
-            // Proporcionar un botón para volver al inicio
+            // Proporcionar un botÃ³n para volver al inicio
             document.getElementById("backButton").addEventListener("click", function() {
                 window.location.href = 'index.html';
             });
