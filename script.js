@@ -54,9 +54,9 @@ function showMessage(text, type) {
 
     let sound;
     if (type === 'correct') {
-        sound = new Audio('Sound/correcto.mp3');
+        sound = new Audio('Sound/Correcto.mp3');
     } else if (type === 'error') {
-        sound = new Audio('Sound/error.mp3');
+        sound = new Audio('Sound/Error.mp3');
     } else if (type === 'fin') {
         sound = new Audio('Sound/Fin del Juego.mp3');
     }
