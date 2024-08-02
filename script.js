@@ -16,7 +16,7 @@ function endGame() {
             usuario: localStorage.getItem("ActualUs"),
             puntaje: score,
             juegonumero: incrementGameNumber(),
-            game: "TM_rcnc"
+            game: "ALT_rcnc"
         };
         const gamesHistory = JSON.parse(localStorage.getItem("gamesHistory")) || [];
         gamesHistory.push(userData);
